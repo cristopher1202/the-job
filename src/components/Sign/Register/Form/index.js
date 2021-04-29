@@ -125,7 +125,7 @@ const FormRegister = () => {
   };
 
   const validateForm = () => {
-    const { name, email, password } = this.state;
+    const { name, email, password } = state;
 
     return (
       email &&
