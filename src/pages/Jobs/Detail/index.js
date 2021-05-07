@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getJob } from '../../../services/jobs.service';
+import { useParams } from 'react-router-dom';
 
 import Navigation from './../../../components/Navigation';
 import Header from './../../../components/Header';
@@ -6,20 +8,35 @@ import JobDetail from './../../../components/JobDetail';
 import Description from './../../../components/JobDetail/Description';
 import Footer from './../../../components/Footer';
 
-const DetailJob = () => (
-  <div className="nav-on-header smart-nav bg-alt">
-    <Navigation />
+const DetailJob = () => {
+  const [jobData, setJobData] = useState(null);
+  const { id } = useParams();
 
-    <Header className="page-header bg-img size-lg" backgroundImage="url(/img/bg-banner2.jpg)">
-      <Description />
-    </Header>
+  const getJobDetails = async () => {
+    const job = await getJob(id);
 
-    <main>
-      <JobDetail />
-    </main>
+    setJobData(job);
+  };
+  useEffect(() => {
+    getJobDetails();
+  }, [id]);
 
-    <Footer />
-  </div>
-);
+  return (
+    <div className="nav-on-header smart-nav bg-alt">
+      <Navigation />
+
+      <Header
+        className="page-header bg-img size-lg"
+        backgroundImage="url(/img/bg-banner2.jpg)"
+      >
+        {jobData ? <Description job={jobData} /> : null}
+      </Header>
+
+      <main>{jobData ? <JobDetail job={jobData} /> : null}</main>
+
+      <Footer />
+    </div>
+  );
+};
 
 export default DetailJob;

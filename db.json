@@ -1,5 +1,42 @@
 {
-  "users": [],
+  "candidates": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "title": "Front-end developer",
+      "location": "Menlo park, CA",
+      "rate": "$55 per hour",
+      "applied": "Apr 15, 2018",
+      "image": "/img/avatar-1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Bikesh Soltanian",
+      "title": "Java developer",
+      "location": "Fairfield, IA",
+      "rate": "$60 per hour",
+      "applied": "Apr 15, 2018",
+      "image": "/img/avatar-2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Chris Hernandeziyan",
+      "title": "Front-end developer",
+      "location": "Seattle, WA",
+      "rate": "$50 per hour",
+      "applied": "Apr 15, 2018",
+      "image": "/img/avatar-3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Khriztian Moreno",
+      "title": "FullStack Javascript Developer",
+      "location": "Medellín, CO",
+      "rate": "$70 per hour",
+      "applied": "Apr 15, 2021",
+      "image": "/img/avatar-4.jpg"
+    }
+  ],
   "jobs": [
     {
       "id": "1020",
@@ -35,7 +72,15 @@
         "Knowledge of user interface design."
       ],
       "ago": "34 min ago",
-      "className": "label-success"
+      "className": "label-success",
+      "candidates": [
+        {
+          "name": "cristina",
+          "email": "cristina@rosl.cl",
+          "role": "candidate",
+          "id": 1027
+        }
+      ]
     },
     {
       "id": "1030",
@@ -71,7 +116,16 @@
         "Knowledge of user interface design."
       ],
       "ago": "8 hours ago",
-      "className": "label-warning"
+      "className": "label-warning",
+      "candidates": [
+        {
+          "name": "Tamara Santander",
+          "email": "t.sant.go@gmail.com",
+          "role": "candidate",
+          "id": 1028
+        },
+        {}
+      ]
     },
     {
       "id": "1040",
@@ -107,7 +161,15 @@
         "Knowledge of user interface design."
       ],
       "ago": "2 days ago",
-      "className": "label-info"
+      "className": "label-info",
+      "candidates": [
+        {
+          "name": "Tamara Santander",
+          "email": "t.sant.go@gmail.com",
+          "role": "candidate",
+          "id": 1028
+        }
+      ]
     },
     {
       "id": "1050",
@@ -143,7 +205,21 @@
         "Knowledge of user interface design."
       ],
       "ago": "Feb 26, 2018",
-      "className": "label-danger"
+      "className": "label-danger",
+      "candidates": [
+        {
+          "name": "Tamara Santander",
+          "email": "t.sant.go@gmail.com",
+          "role": "candidate",
+          "id": 1028
+        },
+        {
+          "name": "julian Septen",
+          "email": "julysep@hot.cl",
+          "role": "candidate",
+          "id": 1029
+        }
+      ]
     },
     {
       "id": "1060",
@@ -182,42 +258,76 @@
       "className": "label-success"
     }
   ],
-  "candidates": [
+  "users": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "title": "Front-end developer",
-      "location": "Menlo park, CA",
-      "rate": "$55 per hour",
-      "applied": "Apr 15, 2018",
-      "image": "/img/avatar-1.jpg"
+      "id": 1020,
+      "email": "k@mz.com",
+      "name": "khriztian",
+      "password": "12345",
+      "role": "manager"
     },
     {
-      "id": "2",
-      "name": "Bikesh Soltanian",
-      "title": "Java developer",
-      "location": "Fairfield, IA",
-      "rate": "$60 per hour",
-      "applied": "Apr 15, 2018",
-      "image": "/img/avatar-2.jpg"
+      "name": "Daniela",
+      "email": "dani@lo.com",
+      "password": "12345",
+      "role": "candidate",
+      "id": 1021
     },
     {
-      "id": "3",
-      "name": "Chris Hernandeziyan",
-      "title": "Front-end developer",
-      "location": "Seattle, WA",
-      "rate": "$50 per hour",
-      "applied": "Apr 15, 2018",
-      "image": "/img/avatar-3.jpg"
+      "name": "Camilo",
+      "email": "camilo@lo.com",
+      "password": "12345",
+      "role": "candidate",
+      "id": 1022
     },
     {
-      "id": "4",
-      "name": "Khriztian Moreno",
-      "title": "FullStack Javascript Developer",
-      "location": "Medellín, CO",
-      "rate": "$70 per hour",
-      "applied": "Apr 15, 2021",
-      "image": "/img/avatar-4.jpg"
+      "name": "Isabella",
+      "email": "isa@lo.com",
+      "password": "12345",
+      "role": "candidate",
+      "id": 1023
+    },
+    {
+      "name": "Maria",
+      "email": "maria@lolo.com",
+      "password": "1234",
+      "role": "candidate",
+      "id": 1024
+    },
+    {
+      "name": "Cristopher Rojas",
+      "email": "cr.rojasmunoz@gmail.com",
+      "password": "123456",
+      "role": "candidate",
+      "id": 1025
+    },
+    {
+      "name": "john doe",
+      "email": "johncm@gmail.com",
+      "password": "12345",
+      "role": "candidate",
+      "id": 1026
+    },
+    {
+      "name": "cristina",
+      "email": "cristina@rosl.cl",
+      "password": "123456",
+      "role": "candidate",
+      "id": 1027
+    },
+    {
+      "name": "Tamara Santander",
+      "email": "t.sant.go@gmail.com",
+      "password": "123456",
+      "role": "candidate",
+      "id": 1028
+    },
+    {
+      "name": "julian Septen",
+      "email": "julysep@hot.cl",
+      "password": "123456",
+      "role": "candidate",
+      "id": 1029
     }
   ]
 }
