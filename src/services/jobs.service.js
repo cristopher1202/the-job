@@ -22,8 +22,27 @@ const getJob = async id => {
   }
 };
 
+const updateJob = async job => {
+  try {
+    const payload = {
+      method: 'PUT',
+      body: JSON.stringify(job),
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    };
+    const response = await fetch(`${API_URL_BASE}/api/jobs/${job.id}`, payload);
+    const jobUpdated = await response.json();
+
+    return jobUpdated;
+  } catch (error) {
+    throw Error('Ohhps');
+  }
+};
+
 const createJob = job => {
   return job;
 };
 
-export { getAllJobs, getJob, createJob };
+export { getAllJobs, getJob, createJob, updateJob };

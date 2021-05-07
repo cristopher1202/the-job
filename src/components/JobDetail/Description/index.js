@@ -1,9 +1,11 @@
 /*eslint-disable */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const JobDescription = ({ job }) => {
   const {
+    id,
     image,
     title,
     company,
@@ -16,6 +18,16 @@ const JobDescription = ({ job }) => {
     experience,
     certificate,
   } = job;
+  const currentUser = JSON.parse(localStorage.getItem('THE_JOB_APP'));
+
+  const history = useHistory();
+
+  const handleClick = current => {
+    if (current === null) {
+      alert('You must register first');
+      history.push('/register');
+    }
+  };
 
   return (
     <div className="container">
@@ -92,7 +104,11 @@ const JobDescription = ({ job }) => {
             <Link className="btn btn-primary" to="/">
               Apply with linkedin
             </Link>
-            <Link className="btn btn-success" to="/jobs/apply/1020">
+            <Link
+              className="btn btn-success"
+              onClick={handleClick(currentUser)}
+              to={`/jobs/apply/${id}`}
+            >
               Apply now
             </Link>
           </div>

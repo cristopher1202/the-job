@@ -72,7 +72,15 @@
         "Knowledge of user interface design."
       ],
       "ago": "34 min ago",
-      "className": "label-success"
+      "className": "label-success",
+      "candidates": [
+        {
+          "name": "cristina",
+          "email": "cristina@rosl.cl",
+          "role": "candidate",
+          "id": 1027
+        }
+      ]
     },
     {
       "id": "1030",
@@ -108,7 +116,16 @@
         "Knowledge of user interface design."
       ],
       "ago": "8 hours ago",
-      "className": "label-warning"
+      "className": "label-warning",
+      "candidates": [
+        {
+          "name": "Tamara Santander",
+          "email": "t.sant.go@gmail.com",
+          "role": "candidate",
+          "id": 1028
+        },
+        {}
+      ]
     },
     {
       "id": "1040",
@@ -144,7 +161,15 @@
         "Knowledge of user interface design."
       ],
       "ago": "2 days ago",
-      "className": "label-info"
+      "className": "label-info",
+      "candidates": [
+        {
+          "name": "Tamara Santander",
+          "email": "t.sant.go@gmail.com",
+          "role": "candidate",
+          "id": 1028
+        }
+      ]
     },
     {
       "id": "1050",
@@ -180,7 +205,21 @@
         "Knowledge of user interface design."
       ],
       "ago": "Feb 26, 2018",
-      "className": "label-danger"
+      "className": "label-danger",
+      "candidates": [
+        {
+          "name": "Tamara Santander",
+          "email": "t.sant.go@gmail.com",
+          "role": "candidate",
+          "id": 1028
+        },
+        {
+          "name": "julian Septen",
+          "email": "julysep@hot.cl",
+          "role": "candidate",
+          "id": 1029
+        }
+      ]
     },
     {
       "id": "1060",
@@ -261,6 +300,34 @@
       "password": "123456",
       "role": "candidate",
       "id": 1025
+    },
+    {
+      "name": "john doe",
+      "email": "johncm@gmail.com",
+      "password": "12345",
+      "role": "candidate",
+      "id": 1026
+    },
+    {
+      "name": "cristina",
+      "email": "cristina@rosl.cl",
+      "password": "123456",
+      "role": "candidate",
+      "id": 1027
+    },
+    {
+      "name": "Tamara Santander",
+      "email": "t.sant.go@gmail.com",
+      "password": "123456",
+      "role": "candidate",
+      "id": 1028
+    },
+    {
+      "name": "julian Septen",
+      "email": "julysep@hot.cl",
+      "password": "123456",
+      "role": "candidate",
+      "id": 1029
     }
   ]
 }
